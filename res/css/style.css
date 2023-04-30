@@ -211,10 +211,20 @@ header .laptop a {
     color: #111;
     padding: 10px 10px;
 }
+#about img {
+    display: flex;
+    justify-self: flex-end;
+    grid-column: 2;
+    grid-row: 2;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
 
 #about .inner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 450px;
+    grid-template-rows: repeat(2, auto);
     gap: 15px;
     padding: 50px 100px;
 }
@@ -228,9 +238,10 @@ header .laptop a {
 #about p {
     line-height: 1.5rem;
     font-size: 1.1rem;
+    grid-column: 1;
+    grid-row: 2;
 }
 #carte {
-    padding-top: 80px;
     background-color: #e0e0e0;
     color: #111;
     scroll-margin-top: -80px;
@@ -457,6 +468,13 @@ footer .credits {
 @media screen and (max-width: 1024px) {
     #menu .card-title-wrapper {
         gap: 10px;
+    }
+    #about img {
+        display: none;
+    }
+    #about .inner {
+        display: flex;
+        flex-direction: column;
     }
     #menu .card {
         padding: 45px 40px 40px;

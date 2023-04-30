@@ -120,4 +120,31 @@ responsiveNavBtn.addEventListener('click', (e) => {
     responsiveNav.classList.toggle('active')
 })
 
+let cursor = document.getElementById('cursor')
+
+
+const mouse = {
+    x:0 , y:0
+}
+
+let posx = 0
+let posy = 0
+
+const lerp = (a, b, t) => {
+    return (1 - t) * a + t * b
+}
+
+document.addEventListener('mousemove', (e) => {
+    mouse.x = e.clientX
+    mouse.y = e.clientY
+})
+
+const raf = () => {
+    posx = lerp(posx, mouse.x, 0.2)
+    posy = lerp(posy, mouse.y, 0.2)
+
+    cursor.style.transform = `translateX(${posx - 25}px) translateY(${posy - 25}px)`
+    requestAnimationFrame(raf)
+}
+raf()
 init()

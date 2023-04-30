@@ -77,3 +77,17 @@ button i {
     line-height: 0;
     transition: transform .2s;
 }
+
+
+@media (hover: hover) {
+    #cursor {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        z-index: 10;
+        user-select: none;
+        pointer-events: none;
+    }
+}
