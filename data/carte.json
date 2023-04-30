@@ -1,0 +1,81 @@
+{
+    "aperitifs": {
+        "champignons": [
+            "Mini verrine de champignons et crème de jambon",
+            "Assortiment de champignons au fromage",
+            "Mini bruschetta (tomate, chèvre, champignon"
+        ],
+        "sansChampignons": [
+            "Gougère au fromage",
+            "Assortiment de mini tarteletts salées",
+            "Onions rings"
+        ]
+    },
+    "plats": {
+        "champignons": [
+            "Salade de champignons a l'ail",
+            "Champignons farcis",
+            "Velouté de champignons",
+            "Poulet à la moutarde, à l'estragon, et aux champignons",
+            "Risotto aux champignons",
+            "Steak avec sa sauce aux champignons accompagné de frites ou de spaghetti et d'une salade composée",
+            "Poêlée de champignons aux herbes",
+            "Crêpe champignonne",
+            "Magret de canard roti au mendiants accompagné de sa sauce aux champignons",
+            "Brouillade de truffes",
+            "Tagliatelle fraîches aux truffes et au foie gras"
+        ],
+        "sansChampignons": [
+            "Blanquette de veau",
+            "Tartiflette",
+            "Pates à la carbonara à la française",
+            "Roti de boeuf",
+            "Croque monsieur",
+            "Pavé de saumon"
+        ]
+    },
+    "desserts": [
+        "Vacherin aux fruits",
+        "Choux crème et citron vertmini tarte tropezienne",
+        "Panna cotta au thé vert",
+        "Paris brest",
+        "Tiramisu",
+        "Mousse au chocolat",
+        "Far breton",
+        "Tarte aux pommes",
+        "Crumble aux pommes"
+    ],
+    "boissons": {
+        "alcool": [
+            "Ricard ",
+            "Rhum ",
+            "Whisky William Lawson ",
+            "Whisky Jack Daniels",
+            "Bourbon Wild Turquey",
+            "Vodka Absolut",
+            "Gin",
+            "Pineau (blanc ou rouge)",
+            "Lillet blanc",
+            "Martini (blanc ou rouge)",
+            "Guignolet Kirsh",
+            "Soho Litchi",
+            "Kir (peche, cassis)",
+            "Bierre pression Mauretti"
+        ],
+        "sans-alcool": [
+            "Coca Cola",
+            "Orangina",
+            "Thé Glacé",
+            "Limonade",
+            "Sirop",
+            "Jus de fruits (orange, A.C.E, Ananas-Coco, Pomme)",
+            "Eau plate",
+            "Eau gazeuse"
+        ],
+        "chaudes": [
+            "Expresso",
+            "Décaféiné",
+            "Thé"
+        ]
+    }
+}

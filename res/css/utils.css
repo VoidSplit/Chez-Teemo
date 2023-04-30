@@ -1,0 +1,56 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Auto smooth */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Hover Effect */
+
+.smooth-hover {
+    position: relative;
+}
+.smooth-hover::after {
+    position: absolute;
+    content: '';
+    background-color: #e0e0e0;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    top: 110%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .2s;
+}
+.smooth-hover:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Boutons */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: 3px solid #e0e0e0;
+}
+.btn-full {
+    background-color: #e0e0e0;
+    color: #000;
+    transition: background-color .1s;
+}
+.btn-full:hover {
+    background-color: transparent;
+    color: #e0e0e0
+}

@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes loadLines {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(100%);
+    }
+}

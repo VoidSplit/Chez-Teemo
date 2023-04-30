@@ -1,0 +1,327 @@
+@import url("./fonts.css");
+@import url("./utils.css");
+@import url("./keyframes.css");
+
+header {
+    height: 100vh;
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 60px;
+    padding: 0 50px;
+    color: #e0e0e0;
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Arizonia', cursive;
+    font-size: 2rem;
+    animation: slideTop .5s forwards;
+    transform: translateY(-100%);
+    cursor: pointer;
+}
+
+header .logo span {
+    font-family: 'Arizonia', cursive;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    font-size: 1.2rem;
+    animation: slideTop .5s forwards;
+    animation-delay: .3s;
+    transform: translateY(-100%);
+}
+
+header nav ul:not(.socials) {
+    justify-content: center;
+    animation-delay: .2s;
+}
+
+header nav ul.socials {
+    margin: 0 0 0 auto;
+}
+
+header nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-section .img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero-section .img-bg img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-section .img-bg::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.hero-section .center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.hero-section .center-box h1 {
+    font-size: 8rem;
+    font-family: 'Arizonia', cursive;
+    font-weight: 200;
+    opacity: 0;
+    animation: fadeIn forwards .2s .8s;
+}
+
+.hero-section .center-box p {
+    opacity: 0;
+    animation: fadeIn forwards .2s .9s;
+}
+
+.decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+    opacity: 0;
+    animation: fadeIn forwards .2s .8s;
+}
+
+.decoration .decoration-line {
+    height: 2px;
+    width: 200px;
+    background-color: #e0e0e0;
+    animation: loadLines .3s forwards linear 1s;
+    transform: scaleX(0);
+}
+
+.decoration .decoration-line-left {
+    transform-origin: right;
+}
+
+.decoration .decoration-line-right {
+    transform-origin: left;
+}
+
+.decoration .decoration-dot {
+    height: 5px;
+    aspect-ratio: 1 / 1;
+    background-color: #e0e0e0;
+}
+
+#about {
+    background-color: #e0e0e0;
+    color: #111;
+    padding: 10px 10px;
+}
+
+#about .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 100px;
+}
+
+#about h1 {
+    font-family: 'Arizonia', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#about p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+#carte {
+    padding-top: 80px;
+    background-color: #e0e0e0;
+    color: #111;
+    scroll-margin-top: -80px;
+}
+#carte .carte-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    font-family: 'Arizonia', cursive;
+    font-size: 3rem;
+}
+#carte .carte-layout {
+    background-color: #e0e0e0;
+    column-count: 2;
+    column-rule: 2px solid #111;
+    gap: 2px;
+}
+#carte .category {
+    background-color: #e0e0e0;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#carte .category .name {
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    background-color: e0e0e0;
+    padding: 25px 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#carte .category article {
+    padding: 10px 50px;
+}
+#menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    
+    background-color: #e0e0e0;
+}
+#menu .card {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    color: #e0e0e0;
+    padding: 45px 80px 40px;
+    gap: 25px;
+}
+#menu .card-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#menu .card-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#menu .card-title {
+    font-size: 2rem;
+    font-family: 'Arizonia', cursive;
+    line-height: 1rem;
+}
+#menu .card-subtitle {
+    display: flex;
+    align-items: center;
+    color: #9e9e9e;
+}
+#menu .card-price {
+    display: flex;
+    justify-content: flex-end;
+}
+#menu .card-formule {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#menu .card-formule p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+#menu .card-formule span {
+    color: #9e9e9e;
+    font-size: 0.9rem;
+}
+
+#bar {
+    background-color: #e0e0e0;
+    color: #111;
+    padding: 10px 10px;
+    border-bottom: 2px solid #111;
+}
+
+#bar .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 100px;
+    align-items: flex-start;
+}
+
+#bar h1 {
+    font-family: 'Arizonia', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#bar p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+#bar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 0;
+    background-color: #111;
+    color: #e0e0e0;
+    line-height: 0;
+    gap: 18px;
+    cursor: pointer;
+}
+
+#bar button:hover i {
+    transform: translateX(5px);
+}
+#bar button i {
+    line-height: 0;
+    transition: transform .2s;
+}
+#reservations {
+    background-color: #e0e0e0;
+    height: 200px;
+}
+
+footer {
+    background-color: #111;
+    height: 200px;
+    width: 100%;
+}
