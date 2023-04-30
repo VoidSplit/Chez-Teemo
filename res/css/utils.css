@@ -44,6 +44,7 @@ html {
     font-weight: 500;
     cursor: pointer;
     outline: 3px solid #e0e0e0;
+    text-decoration: none;
 }
 .btn-full {
     background-color: #e0e0e0;

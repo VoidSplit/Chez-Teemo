@@ -241,7 +241,7 @@ header nav a {
     gap: 10px;
 }
 #menu .card-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Arizonia', cursive;
     line-height: 1rem;
 }
@@ -366,6 +366,38 @@ header nav a {
 
 footer {
     background-color: #111;
+    color: #e0e0e0;
     height: 200px;
     width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: "logo nav" "text nothing" "credits credits";
+    padding: 50px 50px 25px;
+    gap: 10px;
+}
+footer .logo {
+    grid-area: logo;
+    color: #eee;
+    font-family: 'Arizonia', cursive;
+    font-size: 2.3rem;
+}
+footer nav {
+    grid-area: nav;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+}
+footer nav a {
+    height: 1rem;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+footer p {
+    grid-area: text;
+}
+footer .credits {
+    grid-area: credits;
+    text-align: center;
+    color: #646464;
 }
