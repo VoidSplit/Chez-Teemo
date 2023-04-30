@@ -25,7 +25,6 @@ nav.active #responsive-menu {
 #responsive-nav {
     position: relative;
     width: 100vw;
-    overflow: hidden;
 }
 #responsive-menu {
     position: absolute;
@@ -490,9 +489,18 @@ footer .credits {
         flex-direction: column;
     }
 }
+@media screen and (max-width: 600px) {
+    #responsive-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #responsive-menu ul li {
+        flex-grow: 1;
+    }
+}
 @media screen and (max-width: 768px) {
     #about h1 {
-        font-size: 13vw;
+        font-size: 8vw;
     }
     #about .inner {
         padding: 25px 50px;
