@@ -85,9 +85,11 @@ button i {
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        border: 1px solid #fff;
+        border: 1px solid #000;
         z-index: 10;
         user-select: none;
         pointer-events: none;
+        filter: invert(1);
+        mix-blend-mode: difference;
     }
 }

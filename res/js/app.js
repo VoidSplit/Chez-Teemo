@@ -124,7 +124,7 @@ let cursor = document.getElementById('cursor')
 
 
 const mouse = {
-    x:0 , y:0
+    x: 0, y: 0
 }
 
 let posx = 0
@@ -140,8 +140,8 @@ document.addEventListener('mousemove', (e) => {
 })
 
 const raf = () => {
-    posx = lerp(posx, mouse.x, 0.2)
-    posy = lerp(posy, mouse.y, 0.2)
+    posx = lerp(posx, mouse.x, 0.05)
+    posy = lerp(posy, mouse.y, 0.05)
 
     cursor.style.transform = `translateX(${posx - 25}px) translateY(${posy - 25}px)`
     requestAnimationFrame(raf)
