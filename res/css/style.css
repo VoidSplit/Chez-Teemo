@@ -17,6 +17,39 @@ header .phone {
 }
 header .phone #responsive-menu-btn {
     font-size: 1.5rem;
+    z-index: 2;
+}
+nav.active #responsive-menu {
+    transform: translateX(0%);
+}
+#responsive-nav {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+#responsive-menu {
+    position: absolute;
+    transition: transform .2s, opacity .5s;
+    transform: translateX(100%);
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 1;
+}
+#responsive-menu ul {
+    display: flex;
+    justify-content: center;
+}
+#responsive-menu ul li {
+    text-align: center;
+    list-style-type: none;
+    padding: 15px;
+}
+#responsive-menu li a {
+    color: #e0e0e0;
+    text-decoration: none;
 }
 header .phone .logo {
     display: flex;

@@ -26,9 +26,7 @@ const getCarte = () => {
     );
 }
 const createCarteDOM = (carte) => {
-    console.log(carte)
     carte.forEach((m, i) => {
-        console.log(m, i)
 
 
         let categoryDisplay = ""
@@ -115,5 +113,11 @@ const init = async () => {
         createCarteDOM(infos)
     }
 }
+
+let responsiveNavBtn = document.getElementById('responsive-menu-btn')
+let responsiveNav= document.getElementById('responsive-nav')
+responsiveNavBtn.addEventListener('click', (e) => {
+    responsiveNav.classList.toggle('active')
+})
 
 init()
